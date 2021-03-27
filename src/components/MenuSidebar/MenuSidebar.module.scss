@@ -1,0 +1,8 @@
+@import "../../globalStyles/colors";
+
+.Sidebar__container {
+    width: 280px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    background: $sidebarBackground;
+}

@@ -1,0 +1,16 @@
+.UserInfo__container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .awatar {
+        height: 40px;
+        width: 50px;
+    }
+    h2 {
+        font-size: 20;
+    }
+    .Plus__button {
+        font-size: 22px;
+    }
+}
