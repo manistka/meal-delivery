@@ -8,10 +8,10 @@ import CommunityList from "../CommunityList/CommunityList";
 
 const MenuDetails = () => {
     return (
-        <div className={classes.MenuDetails__Container}>
+        <div className={classes.Container}>
             <MenuList />
             <CommunityList />
-            <div className={classes.LogOut__Style}>
+            <div className={classes.LogOut}>
                 <MenuButton path="/logout">
                     <Icons.LogOut />
                     Log out

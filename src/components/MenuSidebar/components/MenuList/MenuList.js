@@ -13,7 +13,7 @@ const MenuList = () => {
         { name: "Calendar", path: "calendar", icon: <Icons.Calendar /> },
     ];
     return (
-        <div className={classes.Menu__Style}>
+        <div className={classes.Container}>
             <h2>MENU</h2>
             {links.map((link) => (
                 <MenuButton key={link.name} path={link.path}>

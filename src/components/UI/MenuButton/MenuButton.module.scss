@@ -1,6 +1,6 @@
 @import "../../../globalStyles/colors";
 
-.Button__style {
+.MenuButton {
     color: $secondColor;
     font-size: 20px;
     text-decoration: none;
@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     border-radius: 25px;
+    svg {
+        margin: 0 15px;
+    }
 }
 .Selected {
     svg {

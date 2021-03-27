@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./Icons.module.scss";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -8,50 +7,46 @@ library.add(fas);
 
 const Icons = ({ children }) => children;
 
-const UserLock = () => (
-    <FontAwesomeIcon
-        className={classes.Locker__style}
-        icon={["fas", "user-lock"]}
-    />
+const UserLock = (props) => (
+    <FontAwesomeIcon icon={["fas", "user-lock"]} {...props} />
 );
 
-const Bell = () => (
-    <FontAwesomeIcon icon={["fas", "bell"]} className={classes.Bell__style} />
+const Bell = (props) => <FontAwesomeIcon icon={["fas", "bell"]} {...props} />;
+
+const Pencil = (props) => (
+    <FontAwesomeIcon icon={["fas", "pencil-alt"]} {...props} />
 );
 
-const Pencil = () => (
-    <FontAwesomeIcon
-        icon={["fas", "pencil-alt"]}
-        className={classes.Pencil__style}
-    />
+const Overview = (props) => (
+    <FontAwesomeIcon icon={["fas", "align-justify"]} {...props} />
 );
 
-const Overview = () => (
-    <FontAwesomeIcon
-        icon={["fas", "align-justify"]}
-        className={classes.Icons}
-    />
+const Meals = (props) => (
+    <FontAwesomeIcon icon={["fas", "hamburger"]} {...props} />
 );
-const Meals = () => (
-    <FontAwesomeIcon icon={["fas", "hamburger"]} className={classes.Icons} />
+
+const User = (props) => <FontAwesomeIcon icon={["fas", "user"]} {...props} />;
+
+const Order = (props) => <FontAwesomeIcon icon={["fas", "book"]} {...props} />;
+
+const Calendar = (props) => (
+    <FontAwesomeIcon icon={["fas", "calendar-alt"]} {...props} />
 );
-const User = () => (
-    <FontAwesomeIcon icon={["fas", "user"]} className={classes.Icons} />
+
+const Reviews = (props) => (
+    <FontAwesomeIcon icon={["fas", "list"]} {...props} />
 );
-const Order = () => (
-    <FontAwesomeIcon icon={["fas", "book"]} className={classes.Icons} />
+
+const Recipies = (props) => (
+    <FontAwesomeIcon icon={["fas", "book-reader"]} {...props} />
 );
-const Calendar = () => (
-    <FontAwesomeIcon icon={["fas", "calendar-alt"]} className={classes.Icons} />
+
+const LogOut = (props) => (
+    <FontAwesomeIcon icon={["fas", "sign-out-alt"]} {...props} />
 );
-const Reviews = () => (
-    <FontAwesomeIcon icon={["fas", "list"]} className={classes.Icons} />
-);
-const Recipies = () => (
-    <FontAwesomeIcon icon={["fas", "book-reader"]} className={classes.Icons} />
-);
-const LogOut = () => (
-    <FontAwesomeIcon icon={["fas", "sign-out-alt"]} className={classes.Icons} />
+
+const Search = (props) => (
+    <FontAwesomeIcon icon={["fas", "search"]} {...props} />
 );
 
 Icons.Bell = Bell;
@@ -65,5 +60,6 @@ Icons.Calendar = Calendar;
 Icons.Reviews = Reviews;
 Icons.Recipies = Recipies;
 Icons.LogOut = LogOut;
+Icons.Search = Search;
 
 export default Icons;

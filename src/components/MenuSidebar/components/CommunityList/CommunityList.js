@@ -10,7 +10,7 @@ const CommunityList = () => {
         { name: "Recipies", path: "recipies", icon: <Icons.User /> },
     ];
     return (
-        <div className={classes.Community__Style}>
+        <div className={classes.Container}>
             <h2>COMMUNITY</h2>
             {links.map((link) => (
                 <MenuButton key={link.name} path={link.path}>
