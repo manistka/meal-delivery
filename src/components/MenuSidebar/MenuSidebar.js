@@ -7,7 +7,7 @@ import MenuDetails from "../MenuSidebar/components/MenuDetails/MenuDetails";
 
 const SideBar = () => {
     return (
-        <div className={classes.Sidebar__container}>
+        <div className={classes.Container}>
             <MenuHeader />
             <div style={{ padding: "0 24px" }}>
                 <UserInfo />

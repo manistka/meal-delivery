@@ -7,7 +7,7 @@ const MenuButton = ({ path, children }) => {
         <NavLink
             to={path}
             activeClassName={classes.Selected}
-            className={classes.Button__style}
+            className={classes.MenuButton}
         >
             {children}
         </NavLink>

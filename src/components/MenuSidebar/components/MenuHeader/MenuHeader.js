@@ -4,9 +4,9 @@ import Icons from "../../../UI/Icons/Icons";
 
 const MenuHeader = () => {
     return (
-        <div className={classes.MenuHeader__container}>
-            <Icons.UserLock />
-            <Icons.Bell />
+        <div className={classes.Container}>
+            <Icons.UserLock style={{ color: "#46b04a" }} />
+            <Icons.Bell style={{ color: "#82867d" }} />
         </div>
     );
 };

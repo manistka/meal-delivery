@@ -6,7 +6,7 @@ import Button from "../../../UI/Button/Button";
 
 const UserInfo = () => {
     return (
-        <div className={classes.UserInfo__container}>
+        <div className={classes.Container}>
             <img src={avatar} alt="" className={classes.awatar} />
             <h2 style={{ fontSize: "20px" }}>Hello Maciej</h2>
             <p style={{ color: "#82867d" }}>
@@ -20,7 +20,7 @@ const UserInfo = () => {
                 >
                     Free
                 </span>{" "}
-                <Icons.Pencil />
+                <Icons.Pencil style={{ color: "#82867d" }} />
             </p>
             <Button>
                 <p>Create new meal</p>

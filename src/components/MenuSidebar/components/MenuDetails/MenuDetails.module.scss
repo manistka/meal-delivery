@@ -1,11 +1,11 @@
 @import "../../../../globalStyles/colors";
 
-.MenuDetails__Container {
+.Container {
     height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .LogOut__Style {
+    .LogOut {
         height: 100px;
         display: flex;
         align-items: flex-end;

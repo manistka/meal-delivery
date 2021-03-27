@@ -1,0 +1,10 @@
+.Container {
+    width: 70%;
+    display: flex;
+    .Input {
+        outline: none;
+        border: none;
+        width: 100%;
+        margin-left: 8px;
+    }
+}
