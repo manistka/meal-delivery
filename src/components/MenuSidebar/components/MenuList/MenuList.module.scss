@@ -1,0 +1,11 @@
+@import "../../../../globalStyles/colors";
+.Menu__Style {
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    h2 {
+        font-size: 12px;
+        color: $secondColor;
+        align-items: center;
+    }
+}

@@ -1,0 +1,11 @@
+@import "../../../../globalStyles/colors";
+
+.Community__Style {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 12px;
+    color: $secondColor;
+    align-items: center;
+}
