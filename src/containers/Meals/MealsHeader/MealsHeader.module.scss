@@ -1,0 +1,71 @@
+@import "../../../globalStyles/colors";
+
+.Container {
+    padding: 0 24px;
+    .Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Title {
+            width: 50%;
+            h2 {
+                font-size: 30px;
+                color: $options;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                color: $secondColor;
+            }
+        }
+        .ActionButtons {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .SortList {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $underline;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            width: 70%;
+            font-size: 13px;
+            font-weight: 500;
+            color: $secondColor;
+            padding: 0;
+            margin: 0;
+            li {
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                .Underline {
+                    display: none;
+                    position: absolute;
+                    border: 1px solid $mainColor;
+                    width: 100%;
+                    bottom: -1px;
+                }
+                .Active {
+                    display: block;
+                }
+            }
+        }
+        p {
+            font-size: 13px;
+            font-weight: 500;
+            color: $secondColor;
+            span {
+                color: black;
+                font-weight: 700;
+            }
+        }
+    }
+}

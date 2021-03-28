@@ -49,6 +49,16 @@ const Search = (props) => (
     <FontAwesomeIcon icon={["fas", "search"]} {...props} />
 );
 
+const Sort = (props) => <FontAwesomeIcon icon={["fas", "sort"]} {...props} />;
+
+const Info = (props) => (
+    <FontAwesomeIcon icon={["fas", "info-circle"]} {...props} />
+);
+
+const SortDown = (props) => (
+    <FontAwesomeIcon icon={["fas", "sort-down"]} {...props} />
+);
+
 Icons.Bell = Bell;
 Icons.UserLock = UserLock;
 Icons.Pencil = Pencil;
@@ -61,5 +71,8 @@ Icons.Reviews = Reviews;
 Icons.Recipies = Recipies;
 Icons.LogOut = LogOut;
 Icons.Search = Search;
+Icons.Sort = Sort;
+Icons.Info = Info;
+Icons.SortDown = SortDown;
 
 export default Icons;

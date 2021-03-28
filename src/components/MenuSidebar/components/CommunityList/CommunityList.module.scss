@@ -3,10 +3,10 @@
 .Container {
     display: flex;
     flex-direction: column;
-}
-h2 {
-    font-size: 11px;
-    color: $secondColor;
-    align-items: center;
-    letter-spacing: 1px;
+    h2 {
+        font-size: 11px;
+        color: $secondColor;
+        align-items: center;
+        letter-spacing: 1px;
+    }
 }
