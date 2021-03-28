@@ -1,12 +1,12 @@
 @import "../../../../globalStyles/colors";
 
 .Container {
-    height: 570px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     .LogOut {
-        height: 100px;
+        height: 140px;
         display: flex;
         align-items: flex-end;
     }

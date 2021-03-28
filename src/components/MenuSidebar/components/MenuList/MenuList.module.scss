@@ -2,10 +2,11 @@
 .Container {
     display: flex;
     flex-direction: column;
-    height: 330px;
+    height: 300px;
     h2 {
-        font-size: 12px;
+        font-size: 11px;
         color: $secondColor;
         align-items: center;
+        letter-spacing: 1px;
     }
 }

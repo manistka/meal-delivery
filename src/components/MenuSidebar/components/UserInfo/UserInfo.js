@@ -8,8 +8,8 @@ const UserInfo = () => {
     return (
         <div className={classes.Container}>
             <img src={avatar} alt="" className={classes.awatar} />
-            <h2 style={{ fontSize: "20px" }}>Hello Maciej</h2>
-            <p style={{ color: "#82867d" }}>
+            <h2 style={{ fontSize: "20px", color: "#000" }}>Hello Maciej</h2>
+            <p style={{ color: "#82867d", marginTop: "0" }}>
                 Your plan:{" "}
                 <span
                     style={{
