@@ -59,6 +59,22 @@ const SortDown = (props) => (
     <FontAwesomeIcon icon={["fas", "sort-down"]} {...props} />
 );
 
+const Dots = (props) => (
+    <FontAwesomeIcon icon={["fas", "ellipsis-v"]} {...props} />
+);
+
+const Meat = (props) => (
+    <FontAwesomeIcon icon={["fas", "drumstick-bite"]} {...props} />
+);
+
+const Vegan = (props) => (
+    <FontAwesomeIcon icon={["fas", "seedling"]} {...props} />
+);
+
+const Bread = (props) => (
+    <FontAwesomeIcon icon={["fas", "bread-slice"]} {...props} />
+);
+
 Icons.Bell = Bell;
 Icons.UserLock = UserLock;
 Icons.Pencil = Pencil;
@@ -74,5 +90,9 @@ Icons.Search = Search;
 Icons.Sort = Sort;
 Icons.Info = Info;
 Icons.SortDown = SortDown;
+Icons.Dots = Dots;
+Icons.Meat = Meat;
+Icons.Vegan = Vegan;
+Icons.Bread = Bread;
 
 export default Icons;
