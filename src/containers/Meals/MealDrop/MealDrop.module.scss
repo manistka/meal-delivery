@@ -1,0 +1,24 @@
+@import "../../../globalStyles/colors";
+
+.Container {
+    h3 {
+        color: $secondColor;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    .DropItem {
+        border: 3px solid #ecefe6;
+        border-style: dashed;
+        border-radius: 5px;
+        width: 75%;
+        height: 50px;
+        background: #fbfcfb;
+        margin: auto;
+        p {
+            text-align: center;
+            color: $secondColor;
+            font-size: 13px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../../globalStyles/colors";
+.Container {
+    padding: 0 24px;
+    width: 30%;
+    .Title {
+        display: flex;
+        width: 65%;
+        flex-wrap: wrap;
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: $options;
+        }
+    }
+}

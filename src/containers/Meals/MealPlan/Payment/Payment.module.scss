@@ -1,0 +1,50 @@
+@import "../../../../globalStyles/colors";
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40%;
+    .Wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 30%;
+        .Payment {
+            width: 75%;
+            background: $mainColor;
+            color: white;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 5px;
+            .PaymentPrice {
+                background: #72be6c;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0;
+                border-radius: 5px;
+                width: 2;
+                width: 25%;
+                cursor: pointer;
+            }
+        }
+        .PaymentMethod {
+            background: $sidebarBackground;
+            width: 75%;
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
