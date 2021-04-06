@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { useMeal } from "../../../../Context/MealContext";
+
 import classes from "./MealsItem.module.scss";
 import Icons from "../../../../components/UI/Icons/Icons";
 
@@ -6,6 +8,12 @@ import dumplings from "../../../../Images/dumplings.png";
 import IconsTag from "../../../../components/UI/IconsTag/IconsTag";
 
 const MealsItem = ({ name, kcal, price, img, tags }) => {
+    const { state, addMealToOrder } = useMeal();
+
+    useEffect(() => {
+        console.log("state", state);
+    }, [state]);
+
     const getIcon = (tag) => {
         switch (tag) {
             case "meat":
@@ -65,7 +73,13 @@ const MealsItem = ({ name, kcal, price, img, tags }) => {
                         <span>$</span>
                         {price}
                     </p>
-                    <button>+</button>
+                    <button
+                        onClick={() =>
+                            addMealToOrder({ name, kcal, price, img, tags })
+                        }
+                    >
+                        +
+                    </button>
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@ import classes from "./MealPlanItem.module.scss";
 
 import omlette from "../../../../Images/omlette.jpg";
 
-const MealPlanItem = ({ type, name, kcal, price, img }) => {
+const MealPlanItem = ({ type, name, kcal, price, img, onRemove }) => {
     return (
         <div className={classes.Container}>
             <h3>{type}</h3>{" "}
@@ -45,6 +45,7 @@ const MealPlanItem = ({ type, name, kcal, price, img }) => {
                             color: "#82867d",
                             cursor: "pointer",
                         }}
+                        onClick={onRemove}
                     >
                         x
                     </p>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
+import { useMeal } from "../../../Context/MealContext";
 import DatePicker from "react-datepicker";
 import classes from "./MealPlan.module.scss";
 
@@ -12,22 +13,8 @@ import Payment from "./Payment/Payment";
 
 const MealPlan = () => {
     const [date, setDate] = useState(new Date());
-    const meals = [
-        {
-            type: "Breakfast",
-            name: "Tomato Omelette",
-            kcal: "489",
-            price: "4,99",
-            img: omlette,
-        },
-        {
-            type: "Lunch",
-            name: "Fruit Yoghurt",
-            kcal: "223",
-            price: "2,29",
-            img: yoghurt,
-        },
-    ];
+    const { state, removeMealFromOrder } = useMeal();
+
     return (
         <div className={classes.Container}>
             <div className={classes.Title}>
@@ -37,16 +24,19 @@ const MealPlan = () => {
                     onChange={(date) => setDate(date)}
                 />
             </div>
-            {meals.map((meal) => (
-                <MealPlanItem
-                    key={meal.name}
-                    type={meal.type}
-                    name={meal.name}
-                    kcal={meal.kcal}
-                    price={meal.price}
-                    img={meal.img}
-                />
-            ))}
+            {state.meals.length > 0
+                ? state.meals.map((meal, i) => (
+                      <MealPlanItem
+                          onRemove={() => removeMealFromOrder(i)}
+                          key={`${meal.name}_${i}`}
+                          type={meal.type}
+                          name={meal.name}
+                          kcal={meal.kcal}
+                          price={meal.price}
+                          img={meal.img}
+                      />
+                  ))
+                : null}
             <input type="range" min="100" max="450" style={{ width: "100%" }} />
             <MealDrop />
             <Payment />

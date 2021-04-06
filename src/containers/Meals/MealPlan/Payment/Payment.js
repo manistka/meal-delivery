@@ -1,8 +1,11 @@
 import React from "react";
+import { useMeal } from "../../../../Context/MealContext";
 import classes from "./Payment.module.scss";
 import Icons from "../../../../components/UI/Icons/Icons";
 
 const Payment = () => {
+    const { state } = useMeal();
+
     return (
         <div className={classes.Container}>
             <div className={classes.Wrapper}>
@@ -10,7 +13,8 @@ const Payment = () => {
                     <p>Save meals and pay</p>
                     <div className={classes.PaymentPrice}>
                         <p>
-                            <span>$</span>7,28
+                            <span>$</span>
+                            {state.totalPrice}
                         </p>
                     </div>
                 </div>
