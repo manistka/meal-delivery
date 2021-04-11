@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "../../components/Header/Header";
 import MealPlan from "./MealPlan/MealPlan";
@@ -6,6 +6,7 @@ import MealsHeader from "./MealsHeader/MealsHeader";
 import MealsItems from "./MealsItems/MealsItems";
 
 const Meals = () => {
+    const [date, setDate] = useState(new Date());
     return (
         <div>
             <Header />
@@ -18,9 +19,9 @@ const Meals = () => {
             >
                 <div style={{ height: "100%", width: "70%" }}>
                     <MealsHeader />
-                    <MealsItems />
+                    <MealsItems date={date} />
                 </div>
-                <MealPlan />
+                <MealPlan date={date} setDate={setDate} />
             </div>
         </div>
     );
