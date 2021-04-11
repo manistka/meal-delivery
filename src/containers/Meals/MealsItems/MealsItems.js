@@ -5,7 +5,7 @@ import musli from "../../../Images/musli.jpg";
 import sandwich from "../../../Images/sandwich.jpg";
 import MealsItem from "./MealsItem/MealsItem";
 
-const MealsItems = () => {
+const MealsItems = ({ date }) => {
     const items = [
         {
             name: "Chinese Meat Dumplings",
@@ -34,6 +34,7 @@ const MealsItems = () => {
         <ScrollBar style={{ height: "80%" }}>
             {items.map((item) => (
                 <MealsItem
+                    date={date}
                     key={item.name}
                     name={item.name}
                     kcal={item.kcal}

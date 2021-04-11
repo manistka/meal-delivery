@@ -7,7 +7,7 @@ import Icons from "../../../../components/UI/Icons/Icons";
 import dumplings from "../../../../Images/dumplings.png";
 import IconsTag from "../../../../components/UI/IconsTag/IconsTag";
 
-const MealsItem = ({ name, kcal, price, img, tags }) => {
+const MealsItem = ({ name, kcal, price, img, tags, date }) => {
     const { state, addMealToOrder } = useMeal();
 
     useEffect(() => {
@@ -75,7 +75,14 @@ const MealsItem = ({ name, kcal, price, img, tags }) => {
                     </p>
                     <button
                         onClick={() =>
-                            addMealToOrder({ name, kcal, price, img, tags })
+                            addMealToOrder({
+                                name,
+                                kcal,
+                                price,
+                                img,
+                                tags,
+                                date,
+                            })
                         }
                     >
                         +
