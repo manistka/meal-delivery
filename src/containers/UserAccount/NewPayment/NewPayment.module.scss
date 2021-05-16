@@ -1,0 +1,41 @@
+@import "../../../globalStyles/colors";
+
+.PaymentLength {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 80%;
+    .HalfWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+.Input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    label {
+        color: $secondColor;
+        font-size: 18px;
+    }
+    input {
+        height: 25px;
+        border: 1px solid $mainColor;
+        border-radius: 8px;
+        outline: none;
+    }
+}
+
+.Input2 {
+    width: 45%;
+    input {
+        width: auto;
+    }
+}
+.Input3 {
+    width: 80%;
+}

@@ -1,0 +1,106 @@
+@import "../../globalStyles/colors";
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    .DetailsContainer {
+        height: calc(100vh - 65px);
+        .PersonWrapper {
+            width: 70%;
+            height: 100%;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .PersonLength {
+                width: 70%;
+                height: 65%;
+                .HalfWrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .AwatarWrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    .awatar {
+                        border: 3px solid #ecefe6;
+                        border-style: dashed;
+                        border-radius: 5px;
+                        width: 150px;
+                        height: 150px;
+                        background: #fbfcfb;
+                        width: 30%;
+                        p {
+                            font-size: 13px;
+                            font-weight: 200;
+                            margin: 0;
+                            cursor: pointer;
+                            text-align: center;
+                        }
+                    }
+                    .InputsAwatarWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        .SaveButton {
+            width: 70%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+        }
+        .PaymentWrapper {
+            height: 100%;
+            width: 30%;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .CardsButton {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            width: 70%;
+            height: 25%;
+            align-items: center;
+            button {
+                width: 30%;
+            }
+        }
+    }
+}
+.Input {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: $secondColor;
+        font-size: 18px;
+    }
+    input {
+        height: 25px;
+        border: 1px solid $mainColor;
+        border-radius: 8px;
+        outline: none;
+    }
+}
+
+.Input2 {
+    width: 45%;
+    input {
+        width: auto;
+    }
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #2f3841;
+    font-weight: 500;
+}
