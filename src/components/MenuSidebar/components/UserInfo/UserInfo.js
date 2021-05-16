@@ -3,12 +3,16 @@ import classes from "./UserInfo.module.scss";
 import avatar from "../../../../Images/avatar.png";
 import Icons from "../../../UI/Icons/Icons";
 import Button from "../../../UI/Button/Button";
+import { useUser } from "../../../../Context/UserContext";
 
 const UserInfo = () => {
+    const { state } = useUser();
     return (
         <div className={classes.Container}>
             <img src={avatar} alt="" className={classes.awatar} />
-            <h2 style={{ fontSize: "20px", color: "#000" }}>Hello Maciej</h2>
+            <h2 style={{ fontSize: "20px", color: "#000" }}>
+                Hello {state.name}
+            </h2>
             <p style={{ color: "#82867d", marginTop: "0" }}>
                 Your plan:{" "}
                 <span
