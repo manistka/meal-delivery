@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 import Header from "../../components/Header/Header";
+import MealsFilter from "../../components/Header/MealsFilter/MealsFilter";
+import SearchBar from "../../components/Header/SearchBar/SearchBar";
 import MealPlan from "./MealPlan/MealPlan";
 import MealsHeader from "./MealsHeader/MealsHeader";
 import MealsItems from "./MealsItems/MealsItems";
@@ -9,7 +11,10 @@ const Meals = () => {
     const [date, setDate] = useState(new Date());
     return (
         <div>
-            <Header />
+            <Header>
+                <SearchBar />
+                <MealsFilter />
+            </Header>
             <div
                 style={{
                     width: "100%",

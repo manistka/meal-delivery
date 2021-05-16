@@ -75,6 +75,22 @@ const Bread = (props) => (
     <FontAwesomeIcon icon={["fas", "bread-slice"]} {...props} />
 );
 
+const Credit = (props) => (
+    <FontAwesomeIcon icon={["fas", "credit-card"]} {...props} />
+);
+
+const Add = (props) => (
+    <FontAwesomeIcon icon={["fas", "plus-square"]} {...props} />
+);
+
+const Delete = (props) => (
+    <FontAwesomeIcon icon={["fas", "trash"]} {...props} />
+);
+
+const Check = (props) => (
+    <FontAwesomeIcon icon={["fas", "clipboard-check"]} {...props} />
+);
+
 Icons.Bell = Bell;
 Icons.UserLock = UserLock;
 Icons.Pencil = Pencil;
@@ -94,5 +110,9 @@ Icons.Dots = Dots;
 Icons.Meat = Meat;
 Icons.Vegan = Vegan;
 Icons.Bread = Bread;
+Icons.Credit = Credit;
+Icons.Add = Add;
+Icons.Delete = Delete;
+Icons.Check = Check;
 
 export default Icons;

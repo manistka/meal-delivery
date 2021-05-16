@@ -4,13 +4,8 @@ import MealsFilter from "./MealsFilter/MealsFilter";
 
 import SearchBar from "./SearchBar/SearchBar";
 
-const Header = () => {
-    return (
-        <header className={classes.Header}>
-            <SearchBar />
-            <MealsFilter />
-        </header>
-    );
+const Header = ({ children }) => {
+    return <header className={classes.Header}>{children}</header>;
 };
 
 export default Header;
